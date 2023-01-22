@@ -1,38 +1,159 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 370px;
+    max-height: 37em;
+    margin: auto;
+    border-radius: 30px;
+    box-shadow: rgb(85 85 85) 0px 0px 2.4em inset;
+    background: linear-gradient(rgb(227, 227, 227) 0%, rgb(214, 214, 214) 100%);
+    -webkit-box-reflect: below 0px -webkit-gradient(linear, 0% 0%, 0% 100%, from(transparent), color-stop(0.5, transparent), to(rgba(250, 250, 250, 0.3)));
+    animation: 1.5s ease 0s 1 normal none running descend;
+    overflow: hidden
   }
+    
+  .ipod-container {
+    user-select: none;
+    position: relative;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin: auto 0px;
+    touch-action: none;
+    transform: translate3d(0px, 0px, 0px);
+  }
+  
+  .ipod-navigations {
+    position: relative;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 220px;
+    height: 220px; 
+    
+  }
+  
+  .ipod-menu, .ipod-right, .ipod-bottom, .ipod-left {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .ipod-menu {
+    position: absolute;
+    top: 8%;
+  }
+  
+  .ipod-right {
+    position: absolute;
+    right: 8%;
+  }
+  
+  .ipod-bottom {
+    position: absolute;
+    bottom: 8%;
+  }
+  
+  .ipod-left {
+    position: absolute;
+    left: 8%;
+  }
+  
+
+  .center{
+    position: absolute;
+    inset: 0px;
+    margin: auto;
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    box-shadow: rgb(191 191 191) 6px -1em 3em 11px inset;
+    background: rgb(255, 255, 255);
+  }
+  .white-circle{
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    border: 1px solid rgb(185, 185, 185);
+    background: rgb(255, 255, 255);
+  }
+  
+  .main-screen{
+    position: relative;
+    height: 260px;
+    margin: 1.5rem 1.5rem 0px;
+    border: 4px solid black;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    background: rgb(227, 226, 226);
+    animation: 0.5s ease 0s 1 normal none running fadeFromBlack;
+    
+  }
+  .active-screen{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    border-right: 1px solid black;
+    z-index: 2;
+    background-color: white;
+    box-shadow: rgb(191 191 191) 6px 0em 1em 1px
+  }
+
+
+
+#side-menu ul {
+    list-style-type: none; /* remove bullet points */
+    margin: 0; /* remove margins */
+    padding: 0; /* remove padding */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+#side-menu li a {
+    display: block; /* make the menu items take up the full width of the menu */
+    color: black; /* text color */
+    text-align: center; /* center the text */
+    padding: 16px; /* give some padding */
+    text-decoration: none; /* remove underline */
+    font-weight: bold;
+}
+
+#side-menu li a:hover {
+    background-color: #555; /* change the background color on hover */
+    color: white; /* change the text color on hover */
+}
+.active{
+  background-color: #007acc;
+}
+
+.active::before {
+  content: '>';
+  position: absolute;
+  right: 0;
+  padding-top: 15px;
+  padding-right: 10px;
   color: white;
+  font-weight: bolder;
+}
+header{
+  font-weight: bolder;
+  padding: 10px;
+  font-size: large;
+
+}
+.ipod-navigations img{
+  width: 35px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* transition when div is getting hdden */
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
 }
