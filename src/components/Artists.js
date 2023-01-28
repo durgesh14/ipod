@@ -1,5 +1,5 @@
 import React from 'react';
-import artistImage from './assests/react.png';
+import artistImage from '../assets/react.png';
 
 class Artists extends React.Component{
     

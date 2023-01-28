@@ -19,7 +19,7 @@ background: radial-gradient(circle, rgba(156,146,146,1) 0%, rgba(117,116,116,1) 
     height : 65%;
     width : 35%;
     border-radius : 50%;
-    background-image : url('./assests/react.png');
+    background-image : url('/src/assets/react.png');
     background-size: cover;
     background-position: center;
     align-self : center
