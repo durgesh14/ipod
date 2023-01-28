@@ -1,18 +1,26 @@
-import logo from "./logo.svg";
-
 import "./App.css";
-import IpodBtns  from "./ipodBtns";
-import ItemDisplay from "./ItemDisplay";
+import "./ActiveScreen.css";
+import "./assests/css/games.css"
+import "./assests/css/activePanel.css"
+import "./assests/css/music.css"
 
-function App() {
-  
+import ItemDisplay from "./ItemDisplay";
+import React from "react";
+
+class App extends React.Component {
+
+
+render(){
+
   return (
     <div className="App">
-    <ItemDisplay />
-    <IpodBtns />
+    <ItemDisplay 
+        />
+    
     
     </div>
   );
+}
 }
 
 export default App;

@@ -1,0 +1,70 @@
+.screen {
+  height: 50%;
+  width: 95%;
+  border-radius: 12px;
+  background-color: white;
+  border: 2px solid black;
+  margin-top: 1rem;
+}
+
+.artistsContainer {
+    height : 100%;
+    width : 100%;
+    display : flex;
+    flex-direction : column;
+    background: rgb(156,146,146);
+background: radial-gradient(circle, rgba(156,146,146,1) 0%, rgba(117,116,116,1) 49%, rgba(19,18,18,1) 86%);
+}
+.imageContainer {
+    height : 65%;
+    width : 35%;
+    border-radius : 50%;
+    background-image : url('./assests/react.png');
+    background-size: cover;
+    background-position: center;
+    align-self : center
+}
+.myimage  {
+    width: 2rem;
+    height : 2rem;
+    margin-bottom: 0.5rem;
+    font-weight: bolder;
+    display: inline;
+    
+}
+.myimage img{
+    padding-left: 10px;
+    display: inline-block;
+    width: 25px;
+}
+.info {
+    height : 70%;
+    width : 100%;
+    display : flex;
+    flex-direction : row;
+    justify-content : space-evenly;
+    padding-top: 10px;
+}
+.info2 {
+    width : 100%;
+    height : 30%;
+    display : flex;
+    flex-direction : row;
+    flex-wrap : wrap;
+    justify-content : center;
+};
+subInfo {
+    align-self : center
+};
+.titleBar {
+    height:10%;
+    width:100%;
+    border-radius:12px 0 0 0;
+    background-image: linear-gradient(rgb(123, 132, 140) 0% transparent);
+    border-bottom: 1px solid #6c757d;
+    padding : 1px 5px 10px 8px;
+    display:flex;
+    flex-direction : row;
+    justify-content : space-between;
+
+}
