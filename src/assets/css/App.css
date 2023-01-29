@@ -2,7 +2,7 @@
   height: 33rem;
   width: 20em;
   box-shadow: rgb(85 85 85) 0px 0px 2.4em inset;
-  background: linear-gradient(rgb(227, 227, 227) 0%, rgb(214, 214, 214) 100%);
+  background: linear-gradient(rgb(151 191 214) 0%, rgb(229 142 125) 100%);
   -webkit-box-reflect: below 0px -webkit-gradient(linear, 0% 0%, 0% 100%, from(transparent), color-stop(0.5, transparent), to(rgba(250, 250, 250, 0.3)));
 
   margin: 4rem auto;
@@ -58,7 +58,7 @@
   height: 88px;
   border-radius: 50%;
   box-shadow: rgb(191 191 191) 6px -1em 3em 11px inset;
-  background: rgb(255, 255, 255);
+  background: linear-gradient(rgb(74 188 253) 0%, rgb(244 149 130) 100%)
 }
 
 .active {

@@ -7,9 +7,10 @@
 .menuList {
   height: 100%;
   width: 50%;
-  box-shadow: 10px 0px 15px -5px rgba(0;0;0;0.75);
+  box-shadow: 10px 0px 15px -5px rgba(0, 0, 0, 0.75);
   z-index: 1;
 }
+
 .imageContainermusic {
   height: 100%;
   width: 50%;
@@ -34,10 +35,10 @@
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  padding-left: 5px;
   z-index: 111111;
   top: -230px;
-  left: 91px;
+
   position: relative;
   color: antiquewhite;
   font-size: larger;

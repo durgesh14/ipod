@@ -15,7 +15,7 @@ class Music extends React.Component {
           {/* (this.props.activeItem) to determine which of the two options
                     (My Music or Artists) is currently active and
                      displays a ">" symbol next to the active option. */}
-          <div className={this.props.activeItem === "MyMusic" ? "active" : ""}>
+          <div style={{padding: "1.2rem 0.6rem"}} className={this.props.activeItem === "MyMusic" ? "active" : ""}>
             My Music{" "}
             {this.props.activeItem === "MyMusic" ? (
               <span style={{ float: "right", fontWeight: "bold", position: "relative", top: "-2px"}}>&gt;</span>
@@ -23,7 +23,7 @@ class Music extends React.Component {
               ""
             )}
           </div>
-          <div className={this.props.activeItem === "Artists" ? "active" : ""}>
+          <div style={{padding: "1.2rem 0.6rem"}} className={this.props.activeItem === "Artists" ? "active" : ""}>
             Artists{" "}
             {this.props.activeItem === "Artists" ? (
               <span style={{ float: "right", fontWeight: "bold" }}>&gt;</span>
