@@ -1,3 +1,27 @@
+# Classic iPod
+### Created using react-js
+## Screenshots
+![image](https://user-images.githubusercontent.com/34915741/215317006-93b8e6ce-11ab-4b98-89a1-c586f0b82fee.png)
+![image](https://user-images.githubusercontent.com/34915741/215317018-3e0fb408-ad40-4048-b4cd-bc08f6656cc8.png)
+![image](https://user-images.githubusercontent.com/34915741/215317034-4e4e571b-5ba6-429c-afb0-9d7855a56b36.png)
+![image](https://user-images.githubusercontent.com/34915741/215317052-34d74871-6f21-46d8-b64d-8a7156a3247b.png)
+![image](https://user-images.githubusercontent.com/34915741/215317074-1e61d08c-3ad3-41ed-860d-98e994f5cdb6.png)
+
+
+
+## Features
+- Created a menu of options such as Now Playing, Games, Music, Albums.
+- On clicking the center button, It goes inside the menu
+- Clicking on a menu option, hides the menu and open the corresponding screen
+- On click and holding on the circular menu and move the mouse in a circular fashion within the menu boundary, helps user to navigate within the menu
+- Clicking on "Menu" take you back to the main menu
+- Create sub-menus within the menu, such as "My Music" and "Artists" within the Music option.
+- When you click on Now playing, a song will be played
+- you can also play and pause the song from the buttons.
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
