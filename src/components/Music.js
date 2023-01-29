@@ -18,7 +18,7 @@ class Music extends React.Component {
           <div className={this.props.activeItem === "MyMusic" ? "active" : ""}>
             My Music{" "}
             {this.props.activeItem === "MyMusic" ? (
-              <span style={{ float: "right", fontWeight: "bold" }}>&gt;</span>
+              <span style={{ float: "right", fontWeight: "bold", position: "relative", top: "-2px"}}>&gt;</span>
             ) : (
               ""
             )}

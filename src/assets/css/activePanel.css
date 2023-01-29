@@ -46,4 +46,6 @@
 .item-lists span {
   float: right;
   font-weight: bold;
+  position: relative;
+    top: -2px;
 }
