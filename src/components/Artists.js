@@ -6,7 +6,7 @@ class Artists extends React.Component {
   render() {
     return (
       <div className="artistsContainer">
-        <div className="titleBar">
+        <div className="titleBar" style={{borderRadius: "12px 12px 0 0"}}>
           <p style={{ fontWeight: "bold" }}>iPod > Dev</p>
         </div>
         {/* displays the name of the project, the developer, and an image.  */}
