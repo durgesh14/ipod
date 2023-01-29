@@ -4,9 +4,9 @@ class Music extends React.Component{
 
     render(){
         return(
-            <div className='musicScreen' style={styles.musicScreen} id='music-screen'>
-                <div className='menuList' style={styles.menuList} id='menu-list'>
-                    <div className='titleBar' style={styles.titleBar}>
+            <div className='musicScreen'id='music-screen'>
+                <div className='menuList' id='menu-list'>
+                    <div className='titleBar'>
                             <p style={{fontWeight:'bold'}}>iPod > Music</p>
                             
                     </div>
@@ -19,16 +19,12 @@ class Music extends React.Component{
                         </div>
                 
                 </div>
-                <div className='imageContainermusic' style={styles.imageContainer} id='image-container'>
+                <div className='imageContainermusic' id='image-container'>
                 </div>
             </div>
         );
     }
     
-}
-
-const styles = {
-        
 }
 
 

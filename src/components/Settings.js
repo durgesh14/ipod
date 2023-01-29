@@ -10,7 +10,7 @@ class Settings extends React.Component{
                         <p style={{fontWeight:'bold'}}>iPod > Settings</p>
                 </div>
                 <div style={{width : '100%' , height : '90%',display:'flex' , flexDirection : 'row' , justifyContent: 'center'}}>
-                    <img style={styles.image} src="https://cdn-icons-png.flaticon.com/512/563/563541.png" />
+                    <img style={styles.image} alt='img' src="https://cdn-icons-png.flaticon.com/512/563/563541.png" />
                 </div>
             </div>
         );
@@ -33,12 +33,12 @@ const styles = {
         alignSelf : 'center'
     },
     titleBar : {
-        height:'10%',
+        height:'15%',
         width:'100%',
-        borderRadius:'12px 0 0 0',
-        backgroundImage: 'linear-gradient(0deg, rgb(123, 132, 140), transparent)',
+        borderRadius:'10px 0 0 0',
+        backgroundImage: 'linear-gradient(0deg, rgb(124, 134, 140), transparent)',
         borderBottom: '1px solid #6c757d',
-        padding : '1px 5px 10px 8px',
+        padding : '1px 6px 12px 8px',
         display:'flex',
         flexDirecton : 'row',
         justifyContent : 'space-between'

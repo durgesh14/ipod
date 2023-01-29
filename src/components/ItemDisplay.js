@@ -7,39 +7,43 @@ import React from "react";
 import ActiveScreen from "./ActiveScreen";
 import ZingTouch from "zingtouch";
 
-
-class Ipod extends React.Component {
+// ItemDisplay component that handles the state and logic for the iPod functionality
+class ItemDisplay extends React.Component {
   constructor() {
     super();
     this.state = {
-      activeItem: "NowPlaying",
-      activePage: "ActivePanel",
-      enter: 0,
-      play: true,
+      activeItem: "NowPlaying", // current active item on the screen
+      activePage: "ActivePanel", // current active page on the screen
+      enter: 0, // counter for number of times wheel has been rotated
+      play: true, // state of the audio player (playing or paused)
     };
   }
 
+    // function to handle wheel rotation events
   rotateWheel = () => {
     var containerElement = document.getElementById("inner-container");
+    // Creating a new active region using ZingTouch
     var activeRegion = new ZingTouch.Region(containerElement);
-    // var childElement = document.getElementById('inner-container');
-    var change = 0;
+    var change = 0; // counter for number of wheel rotation changes
     var self = this;
     self.state.enter = self.state.enter + 1;
 
+    // check if wheel has been rotated for the first time 
     if (self.state.enter < 2) {
+       // Binding the rotate event to the container element
       activeRegion.bind(containerElement, "rotate", function (event) {
-        //Perform Operations
 
         var newAngle = event.detail.distanceFromLast;
         console.log(newAngle);
 
+        // check if wheel is being rotated clockwise
         if (newAngle < 0) {
           console.log(change);
           change++;
+          // check if change threshold has been reached
           if (change === 15) {
-            console.log("change state");
             change = 0;
+            // check if currently on the ActivePanel page
             if (self.state.activePage === "ActivePanel") {
               if (self.state.activeItem === "NowPlaying") {
                 self.setState({
@@ -71,7 +75,6 @@ class Ipod extends React.Component {
             }
           }
         } else {
-          console.log(change);
           change++;
           if (change === 15) {
             console.log("change state");
@@ -108,8 +111,6 @@ class Ipod extends React.Component {
           }
         }
       });
-    } else {
-      console.log("Not allowed to enter");
     }
   };
 
@@ -162,7 +163,6 @@ class Ipod extends React.Component {
           play: true,
         });
       }
-      console.log("toggled");
     }
   };
 
@@ -172,12 +172,11 @@ class Ipod extends React.Component {
     this.setState({
       audio: audio,
     });
-    console.log(this.state);
   }
 
   render() {
     return (
-      <div className="ipodContainer" style={styles.ipodContainer}>
+      <div className="ipodContainer" >
         <audio className="audio-element">
                         <source src={sound}></source>
                     </audio>
@@ -191,21 +190,20 @@ class Ipod extends React.Component {
         <div 
         className="wheel"
           id="inner-container"
-          style={styles.wheel}
           onMouseOver={this.rotateWheel}
         >
-          <div className="buttonContainer" style={styles.buttonContainer}>
+          <div className="buttonContainer">
             <div
             className="menuButton"
-              style={styles.menuButton}
+             
               onClick={this.changePageToHomeScreen}
             >
               <img src={menu} alt="menu" draggable="false" />
             </div>
           </div>
 
-          <div className="buttonContainer" style={styles.buttonContainer}>
-            <div className="middleButtons" style={styles.middleButtons}>
+          <div className="buttonContainer">
+            <div className="middleButtons">
             <div className="ipod-left" onClick={this.toggle}>
                 <img src={left} alt="left" draggable="false" />
               </div>
@@ -220,8 +218,8 @@ class Ipod extends React.Component {
               </div>
             </div>
           </div>
-          <div className="buttonContainer" style={styles.buttonContainer}>
-            <div className="playButton" onClick={this.toggle} style={styles.playButton}>
+          <div className="buttonContainer">
+            <div className="playButton" onClick={this.toggle}>
               
               <div className="ipod-bottom">
                 <img src={bottom} alt="bottom" draggable="false" />
@@ -235,8 +233,4 @@ class Ipod extends React.Component {
   }
 }
 
-const styles = {
-  
-};
-
-export default Ipod;
+export default ItemDisplay;
