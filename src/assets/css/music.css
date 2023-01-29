@@ -1,63 +1,60 @@
-.musicScreen{
-    height : 100%;
-    width : 100%;
-    display : flex;
-    flex-direction : row
+.musicScreen {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
 }
 .menuList {
-    height : 100%;
-    width : 50%;
-    box-shadow: 10px 0px 15px -5px rgba(0;0;0;0.75);
-    z-index : 1
+  height: 100%;
+  width: 50%;
+  box-shadow: 10px 0px 15px -5px rgba(0;0;0;0.75);
+  z-index: 1;
 }
-.imageContainermusic{
-    height : 100%;
-    width : 50%;
-    background-image : url("https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=836&q=80");
-    background-size : cover;
-    background-position : center;
-    border-radius : 0 12px 12px 0
+.imageContainermusic {
+  height: 100%;
+  width: 50%;
+  background-image: url("https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=836&q=80");
+  background-size: cover;
+  background-position: center;
+  border-radius: 0 12px 12px 0;
 }
 .MainMusicContainer {
-    height : 100%;
-    width : 100%;
-    display : flex;
-    flex-direction : column;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 .MusicImg {
-    height : 100%;
-    width : 100%;
-    align-self : center;
-    border-radius: 9px 9px 9px 9px;
+  height: 100%;
+  width: 100%;
+  align-self: center;
+  border-radius: 9px 9px 9px 9px;
 }
-.MusicInfo{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    z-index: 111111;
-    top: -230px;
-    left: 91px;
-    position: relative;
-    color: antiquewhite;
-    font-size: larger;
-
-}
-
-.MusicInfo2{
-    align-self : center;
+.MusicInfo {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  z-index: 111111;
+  top: -230px;
+  left: 91px;
+  position: relative;
+  color: antiquewhite;
+  font-size: larger;
 }
 
+.MusicInfo2 {
+  align-self: center;
+}
 
 .titleBarSong {
-    height:10%;
-    
-    border-radius:12px 0 0 0;
-    background: linear-gradient(rgb(227, 227, 227) 0%, rgb(214, 214, 214) 100%);
-    border-bottom: 1px solid #6c757d;
-    padding : 1px 5px 10px 8px;
-    display:flex;
-    flex-direction : row;
-    justify-content : space-between;
+  height: 10%;
 
+  border-radius: 12px 0 0 0;
+  background: linear-gradient(rgb(227, 227, 227) 0%, rgb(214, 214, 214) 100%);
+  border-bottom: 1px solid #6c757d;
+  padding: 1px 5px 10px 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }

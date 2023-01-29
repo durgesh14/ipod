@@ -1,25 +1,24 @@
-.settings {
-    width : 100%;
-    height : 100%;
-    display : flex;
-    flex-direction : row;
-    justify-content : center;
-    flex-wrap : wrap;
+.albums {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .image {
-    width:100%;
-    height:100%;
-    align-self : center;
+  width: 100%;
+  height: 100%;
+  align-self: center;
 }
 .titleBarGames {
-    height:10%;
-    width:100%;
-    border-radius:12px 0 0 0;
-    background-image: linear-gradient(rgb(123, 132, 140) 0%, transparent);
-    border-bottom: 1px solid #6c757d;
-    padding : 1px 5px 10px 8px;
-    display:flex;
-    flex-direction : row;
-    justify-content : space-between;
-
+  height: 10%;
+  width: 100%;
+  border-radius: 12px 0 0 0;
+  background-image: linear-gradient(rgb(123, 132, 140) 0%, transparent);
+  border-bottom: 1px solid #6c757d;
+  padding: 1px 5px 10px 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
